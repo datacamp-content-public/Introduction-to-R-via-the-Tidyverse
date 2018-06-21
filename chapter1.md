@@ -17,7 +17,7 @@ key: e127597aa1
 
 ```
 
-The R programming language is a powerful and flexible tool for analyzing data. 
+The R programming language is a powerful and flexible tool for analyzing data.
 
 `@instructions`
 - Add 2 and 2 together.
@@ -94,18 +94,24 @@ key: 3761ff0384
 
 ```
 
-
+You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
 
 `@instructions`
-
+Assign the value 4 to the variable x with the assignment operator.
 
 `@hint`
+x <- 4
 
 
 
-
-
-
+`@solution`
+```{r}
+x <- 4
+```
+`@sct`
+```{r}
+x == 4
+```
 
 
 
