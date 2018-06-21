@@ -1,4 +1,4 @@
-title: Course Title Here
-description: A description of the course.
+title: Introduction to R via the Tidyverse
+description: This course provides an introduction to R for students with no prior programming experience. It, unlike the current Introduction to R course, uses the Tidyverse from the very beginning. 
 programming_language: r
 from: 'r-base-prod:v1.0.0'
