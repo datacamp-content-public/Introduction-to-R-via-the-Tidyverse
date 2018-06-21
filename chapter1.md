@@ -38,6 +38,39 @@ success_msg("Congrats! You have started to learn R.")
 ```
 
 
+---
+## Create a variable x and make it equal 4
+
+```yaml
+type: NormalExercise
+
+xp: 100
+
+key: 3761ff0384
+
+
+
+```
+
+You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
+
+`@instructions`
+Assign the value 4 to the variable x with the assignment operator.
+
+`@hint`
+x <- 4
+
+
+
+`@solution`
+```{r}
+x <- 4
+```
+`@sct`
+```{r}
+x == 4
+```
+
 
 
 
@@ -82,39 +115,6 @@ library(tidyverse)
 
 
 
-
----
-## Create a variable x and make it equal 4
-
-```yaml
-type: NormalExercise
-
-xp: 100
-
-key: 3761ff0384
-
-
-
-```
-
-You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
-
-`@instructions`
-Assign the value 4 to the variable x with the assignment operator.
-
-`@hint`
-x <- 4
-
-
-
-`@solution`
-```{r}
-x <- 4
-```
-`@sct`
-```{r}
-x == 4
-```
 
 
 
