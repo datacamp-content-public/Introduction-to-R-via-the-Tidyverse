@@ -64,7 +64,10 @@ Load the tidverse package with the library() command
 `@hint`
 library(tidyverse)
 
-
+`@pre_exercise_code`
+```{r}
+library(tidyverse)
+```
 
 `@solution`
 ```{r}
