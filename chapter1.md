@@ -1,10 +1,10 @@
 ---
-  title: "Template Chapter 1"
-  description: "This is a template chapter."
+  title: "Getting Started"
+  description: "This chapter provides some basic information for working with R."
   v2: true
 
 ---
-## An exercise title written in sentence case
+## Add two number at the R prompt.
 
 ```yaml
 type: NormalExercise
@@ -17,20 +17,13 @@ key: e127597aa1
 
 ```
 
-This is the assignment text. It should help provide students with the background information needed.
-The instructions that follow should be in bullet point form with clear guidance for what is expected.
+The R programming language is a powerful and flexible tool for analyzing data. 
 
 `@instructions`
-- Instruction 1
-- Instruction 2
-- Instruction 3
-- Instruction 4
+- Add 2 and 2 together.
 
 `@hint`
-- Here is the hint for this setup problem. 
-- It should get students 50% of the way to the correct answer.
-- So don't provide the answer, but don't just reiterate the instructions.
-- Typically one hint per instruction is a sensible amount.
+- Just type "2 + 2" (without the quotes) at the prompt and hit the "return" or "enter" key.
 
 `@pre_exercise_code`
 ```{r}
@@ -50,15 +43,50 @@ The instructions that follow should be in bullet point form with clear guidance 
 ```
 `@solution`
 ```{r}
-# Answer goes here
-# Make sure to match the comments with your sample code
-# to help students see the differences from solution
-# to given.
+2 + 2
 ```
 `@sct`
 ```{r}
 # Update this to something more informative.
-success_msg("Some praise! Then reinforce a learning objective from the exercise.")
+success_msg("Congrats! You have started to learn R.")
+```
+
+
+
+
+
+
+---
+## Load the Tidyverse
+
+```yaml
+type: NormalExercise
+
+xp: 100
+
+key: e79c98eec9
+
+
+
+```
+
+Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
+
+`@instructions`
+Load the tidverse package with the library() command
+
+`@hint`
+library(tidyverse)
+
+
+
+`@solution`
+```{r}
+library(tidyverse)
+```
+`@sct`
+```{r}
+"tidyverse" %in% .packages()
 ```
 
 
@@ -74,7 +102,7 @@ type: NormalExercise
 
 xp: 100
 
-key: e79c98eec9
+key: 3761ff0384
 
 
 
@@ -82,6 +110,10 @@ key: e79c98eec9
 
 
 
+`@instructions`
+
+
+`@hint`
 
 
 
