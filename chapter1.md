@@ -25,22 +25,8 @@ The R programming language is a powerful and flexible tool for analyzing data.
 `@hint`
 - Just type "2 + 2" (without the quotes) at the prompt and hit the "return" or "enter" key.
 
-`@pre_exercise_code`
-```{r}
-# Load datasets and packages here.
-```
-`@sample_code`
-```{r}
-# Your
-# sample
-# code
-# should
-# be
-# ideally
-# 10 lines or less,
-# with a max
-# of 16 lines.
-```
+
+
 `@solution`
 ```{r}
 2 + 2
