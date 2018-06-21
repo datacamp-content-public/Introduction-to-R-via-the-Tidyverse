@@ -81,7 +81,7 @@ library(tidyverse)
 
 
 ---
-## Insert exercise title here
+## Create a variable x and make it equal 4
 
 ```yaml
 type: NormalExercise
