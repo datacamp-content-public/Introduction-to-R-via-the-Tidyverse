@@ -47,13 +47,10 @@ You can also execute R commands straight in the console, located in the lower ri
 `@sct`
 ```{r}
 test_error()
-test_output_contains(12)
+test_output_contains(9 + 3)
 test_student_typed("9 + 3", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
 success_msg("Excellent! See how the console shows the result of the R code you submitted?")
 ```
-
-
-
 
 
 
@@ -62,13 +59,8 @@ success_msg("Excellent! See how the console shows the result of the R code you s
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: a9b6211ed4
-
-
-
 ```
 
 In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:
@@ -76,26 +68,21 @@ In its most basic form, R can be used as a simple calculator. Consider the follo
     Addition: +
     Subtraction: -
     Multiplication: *
-    Division: /
-    Exponentiation: ^
-    Modulo: %%
-
-The last two might need some explaining:
-
-    The ^ operator raises the number to its left to the power of the number to its right: for example 3^2 is 9.
-    The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or 5 %% 3 is 2.
 
 With this knowledge, follow the instructions below to complete the exercise.
 
 `@instructions`
-- Type 2^5 in the editor to calculate 2 to the power 5.
-- Type 28 %% 6 to calculate 28 modulo 6.
+- Type 5 - 2 in the editor to calculate the difference between 5 and 2.
+- Type 3 * 4 in the editor to calculate the product of 3 and 4.
+- Note you can experiment directly in the console.
+- You can also try "Run Code" before you submit your answer.
 - Click 'Submit Answer' and have a look at the R output in the console.
 - Note how the # symbol is used to add comments on the R code.
 
 `@hint`
-Another example of the modulo operator: 9 %% 2 equals 1.
-
+All I am looking for is that you type:
+5 - 2
+3 * 4
 
 `@sample_code`
 ```{r}
@@ -103,46 +90,31 @@ Another example of the modulo operator: 9 %% 2 equals 1.
 5 + 5 
 
 # A subtraction
-5 - 5 
+
 
 # A multiplication
-3 * 5
 
- # A division
-(5 + 5) / 2 
-
-# Exponentiation
 ```
 `@solution`
 ```{r}
-2^5
-28 %% 6
+5 - 2
+3 * 4
 ```
 `@sct`
 ```{r}
 test_error()
-test_output_contains(2^5)
-test_output_contains(28 %% 6)
+test_output_contains(5 - 2)
+test_output_contains(3 * 4)
 success_msg("Excellent!")
 ```
-
-
-
-
-
 
 ---
 ## Create a variable x and make it equal 4
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: 3761ff0384
-
-
-
 ```
 
 You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
@@ -158,7 +130,8 @@ x <- 4
 ```{r}
 # The below code assigns the value 3 to the variable y
 y <- 3
-# Type the code which assigns the value 4 to the variable x
+# Type below the code which assigns the value 4 to the variable x
+
 ```
 `@solution`
 ```{r}
@@ -172,22 +145,13 @@ success_msg("Excellent!")
 ```
 
 
-
-
-
-
 ---
 ## Load the Tidyverse
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: e79c98eec9
-
-
-
 ```
 
 Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
@@ -200,7 +164,7 @@ library(tidyverse)
 
 `@pre_exercise_code`
 ```{r}
-library(tidyverse)
+library(ggplot2)
 ```
 
 `@solution`
