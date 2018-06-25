@@ -20,11 +20,11 @@ Once you think your code is correct, hit the 'Submit Answer' button. DataCamp wi
 
 R makes use of the # sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. For example, Calculate 3 + 4 in the editor on the right is a comment.
 
-You can also execute R commands straight in the console. This is a good way to experiment with R code.
+You can also execute R commands straight in the console, located in the lower right. This is a good way to experiment with R code.
 
 `@instructions`
--In the editor on the right there is already some sample code. Can you see which lines are actual R code and which are comments?-
-Add a line of code that calculates the sum of 9 and 3, and hit the 'Submit Answer' button.
+- In the editor on the right there is already some sample code. Can you see which lines are actual R code and which are comments?
+- Add a line of code that calculates the sum of 9 and 3, and hit the 'Submit Answer' button.
 
 `@hint`
 - Just add "9 + 3" as new line in the file, just like the example in the sample code!
@@ -43,7 +43,7 @@ Add a line of code that calculates the sum of 9 and 3, and hit the 'Submit Answe
 ```
 `@sct`
 ```{r}
-# Update this to something more informative.
+test_error()
 success_msg("Excellent! See how the console shows the result of the R code you submitted?")
 ```
 
