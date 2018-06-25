@@ -44,6 +44,8 @@ You can also execute R commands straight in the console, located in the lower ri
 `@sct`
 ```{r}
 test_error()
+test_output_contains(12)
+test_student_typed("9 + 3", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
 success_msg("Excellent! See how the console shows the result of the R code you submitted?")
 ```
 
@@ -52,13 +54,8 @@ success_msg("Excellent! See how the console shows the result of the R code you s
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: a9b6211ed4
-
-
-
 ```
 
 In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:
@@ -104,14 +101,13 @@ Another example of the modulo operator: 9 %% 2 equals 1.
 # Exponentiation
 ```
 
-
-
-
-
-
-
-
-
+`@sct`
+```{r}
+test_error()
+test_output_contains(2^5)
+test_output_contains(28 %% 6)
+success_msg("Excellent!")
+```
 
 
 ---
@@ -119,13 +115,8 @@ Another example of the modulo operator: 9 %% 2 equals 1.
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: 3761ff0384
-
-
-
 ```
 
 You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
@@ -142,11 +133,13 @@ x <- 4
 ```{r}
 x <- 4
 ```
+
 `@sct`
 ```{r}
-x == 4
+test_error()
+test_student_typed("x <- 4", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
+success_msg("Excellent!")
 ```
-
 
 
 
@@ -157,13 +150,8 @@ x == 4
 
 ```yaml
 type: NormalExercise
-
 xp: 100
-
 key: e79c98eec9
-
-
-
 ```
 
 Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
@@ -176,12 +164,12 @@ library(tidyverse)
 
 `@pre_exercise_code`
 ```{r}
-library(tidyverse)
+## library(tidyverse)
 ```
 
 `@solution`
 ```{r}
-library(tidyverse)
+## library(tidyverse)
 ```
 `@sct`
 ```{r}
