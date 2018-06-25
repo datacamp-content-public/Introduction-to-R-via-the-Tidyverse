@@ -193,14 +193,14 @@ key: e79c98eec9
 Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
 
 `@instructions`
-Load the tidverse package with the library() command
+Load the tidyverse package with the library() command
 
 `@hint`
 library(tidyverse)
 
 `@pre_exercise_code`
 ```{r}
-## library(tidyverse)
+library(tidyverse)
 ```
 
 `@solution`
