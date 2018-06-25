@@ -42,7 +42,7 @@ You can also execute R commands straight in the console, located in the lower ri
 ```
 `@solution`
 ```{r}
-12
+9 + 3
 ```
 `@sct`
 ```{r}
