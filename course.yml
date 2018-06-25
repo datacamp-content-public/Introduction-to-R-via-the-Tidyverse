@@ -4,5 +4,4 @@ description: This course provides an introduction to R for students with no prio
   Tidyverse from the very beginning.
 programming_language: r
 from: r-base-prod:v1.0.0
-datasets:
-  README.md: Readme
+difficulty_level: 1
