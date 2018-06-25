@@ -12,6 +12,9 @@ lang: r
 xp: 100
 skills: 1
 key: e127597aa1
+
+
+
 ```
 
 Type R code to solve the exercises into the editor on the right. Click on the 'Run Code' buttom to cause R to interpret and execute your code. This is a good way of trying out your answer before you formally submit it. The output of your R code is shown in the console in the lower right corner.
@@ -49,13 +52,23 @@ test_student_typed("9 + 3", not_typed_msg = "Something is wrong with your answer
 success_msg("Excellent! See how the console shows the result of the R code you submitted?")
 ```
 
+
+
+
+
+
 ---
 ## R as a calculator
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: a9b6211ed4
+
+
+
 ```
 
 In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:
@@ -76,9 +89,9 @@ With this knowledge, follow the instructions below to complete the exercise.
 
 `@instructions`
 - Type 2^5 in the editor to calculate 2 to the power 5.
-    - Type 28 %% 6 to calculate 28 modulo 6.
-    - Click 'Submit Answer' and have a look at the R output in the console.
-    - Note how the # symbol is used to add comments on the R code.
+- Type 28 %% 6 to calculate 28 modulo 6.
+- Click 'Submit Answer' and have a look at the R output in the console.
+- Note how the # symbol is used to add comments on the R code.
 
 `@hint`
 Another example of the modulo operator: 9 %% 2 equals 1.
@@ -100,7 +113,11 @@ Another example of the modulo operator: 9 %% 2 equals 1.
 
 # Exponentiation
 ```
-
+`@solution`
+```{r}
+2^5
+28 %% 6
+```
 `@sct`
 ```{r}
 test_error()
@@ -110,13 +127,22 @@ success_msg("Excellent!")
 ```
 
 
+
+
+
+
 ---
 ## Create a variable x and make it equal 4
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: 3761ff0384
+
+
+
 ```
 
 You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
@@ -133,7 +159,6 @@ x <- 4
 ```{r}
 x <- 4
 ```
-
 `@sct`
 ```{r}
 test_error()
@@ -145,13 +170,19 @@ success_msg("Excellent!")
 
 
 
+
 ---
 ## Load the Tidyverse
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: e79c98eec9
+
+
+
 ```
 
 Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
@@ -175,8 +206,6 @@ library(tidyverse)
 ```{r}
 "tidyverse" %in% .packages()
 ```
-
-
 
 
 
