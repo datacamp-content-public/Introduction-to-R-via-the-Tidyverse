@@ -154,7 +154,12 @@ Assign the value 4 to the variable x with the assignment operator.
 x <- 4
 
 
-
+`@sample_code`
+```{r}
+# The below code assigns the value 3 to the variable y
+y <- 3
+# Type the code which assigns the value 4 to the variable x
+```
 `@solution`
 ```{r}
 x <- 4
