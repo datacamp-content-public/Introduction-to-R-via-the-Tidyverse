@@ -167,7 +167,7 @@ success_msg("Excellent!")
 
 
 ---
-## Load the Tidyverse
+## Load the tidyverse package
 
 ```yaml
 type: NormalExercise
@@ -180,10 +180,12 @@ key: e79c98eec9
 
 ```
 
-Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages.  To use a package, you must first _install_ it and, second, _load_ it.
+Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into _packages_.  To use a package, you must first _install_ it and, second, _load_ it.
 
 - You install packages using the install.packages() command.
 - You load a package with the library() command.
+
+When using DataCamp, you never need to install a package. All the packages you need are already installed on our servers. Also, in general, you do not need to load a package since doing so repeatedly would get very annoying. Instead, I will explicitly tell you to load a library in certain exercises, like this one.
 
 
 `@instructions`
