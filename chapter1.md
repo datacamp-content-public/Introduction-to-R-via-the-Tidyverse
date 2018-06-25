@@ -191,15 +191,16 @@ When using DataCamp, you never need to install a package. All the packages you n
 `@instructions`
 Load the tidyverse package with the library() command
 
+`@sample_code`
+```{r}
+# Load package below
+library(tidyverse)
+```
+
 `@hint`
 library(tidyverse)
 
 
-
-`@solution`
-```{r}
-library(tidyverse)
-```
 `@sct`
 ```{r}
 "tidyverse" %in% .packages()
