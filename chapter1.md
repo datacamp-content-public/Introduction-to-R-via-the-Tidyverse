@@ -54,13 +54,21 @@ success_msg("Excellent! See how the console shows the result of the R code you s
 
 
 
+
+
+
 ---
 ## R as a calculator
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: a9b6211ed4
+
+
+
 ```
 
 In its most basic form, R can be used as a simple calculator. Consider the following arithmetic operators:
@@ -84,6 +92,7 @@ All I am looking for is that you type:
 5 - 2
 3 * 4
 
+
 `@sample_code`
 ```{r}
 # An addition
@@ -93,7 +102,6 @@ All I am looking for is that you type:
 
 
 # A multiplication
-
 ```
 `@solution`
 ```{r}
@@ -108,13 +116,23 @@ test_output_contains(3 * 4)
 success_msg("Excellent!")
 ```
 
+
+
+
+
+
 ---
 ## Create a variable x and make it equal 4
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: 3761ff0384
+
+
+
 ```
 
 You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
@@ -131,7 +149,6 @@ x <- 4
 # The below code assigns the value 3 to the variable y
 y <- 3
 # Type below the code which assigns the value 4 to the variable x
-
 ```
 `@solution`
 ```{r}
@@ -145,16 +162,29 @@ success_msg("Excellent!")
 ```
 
 
+
+
+
+
 ---
 ## Load the Tidyverse
 
 ```yaml
 type: NormalExercise
+
 xp: 100
+
 key: e79c98eec9
+
+
+
 ```
 
-Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages. You load packages with the library() command.
+Although R starts with many functions, like addition, enabled by default, we need to explicitly load others ourselves. R organizes its functions into packages.  To use a package, you must first _install_ it and, second, _load_ it.
+
+- You install packages using the install.packages() command.
+- You load a package with the library() command.
+
 
 `@instructions`
 Load the tidyverse package with the library() command
@@ -162,14 +192,11 @@ Load the tidyverse package with the library() command
 `@hint`
 library(tidyverse)
 
-`@pre_exercise_code`
-```{r}
-library(ggplot2)
-```
+
 
 `@solution`
 ```{r}
-## library(tidyverse)
+library(tidyverse)
 ```
 `@sct`
 ```{r}
