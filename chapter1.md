@@ -3,7 +3,6 @@
   description: "This chapter provides some basic information for working with R and with DataCamp."
   v2: true
 
----
 
 ---
 ## The R Console
@@ -100,7 +99,9 @@ type: NormalExercise
 xp: 100
 
 key: a9b6211ed4
+lang: r
 
+skills: 1
 
 
 ```
