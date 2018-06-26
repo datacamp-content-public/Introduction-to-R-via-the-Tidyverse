@@ -13,9 +13,6 @@ lang: r
 xp: 100
 skills: 1
 key: e127597aa1
-
-
-
 ```
 
 The R CONSOLE at the lower right is just like the R prompt you see when you start R (or RStudio) on your own computer. You can execute R commands (like 3 + 4) straight in the console. This is a good way to experiment. 
