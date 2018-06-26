@@ -21,8 +21,19 @@ The R CONSOLE at the lower right is just like the R prompt you see when you star
 
 `@instructions`
 - Type 3 + 4 in the console and then hit return.
-- Type 3 + 4 in the SCRIPT.R window in the upper right (next to the "1") and then hit Submit Answer
+- Type 3 + 4 in the SCRIPT.R window in the upper right (next to the "3") and then hit Submit Answer
 
+`@sample_code`
+```{r}
+# This window, titled SCRIPT.R, is the place to type in your answers.
+# The hash sign (#) indicates that what follows is a comment, which R will ignore.
+
+```
+
+`@hint`
+All I am looking for is that you type:
+3 + 4
+in the SCRIPT.R window in the upper right, next to the "3".
 
 `@solution`
 ```{r}
@@ -74,6 +85,12 @@ Once you think your code is correct, hit the 'Submit Answer' button. DataCamp wi
 ```{r}
 9 + 3
 ```
+`@hint`
+All I am looking for is that you type:
+9 + 3
+in the SCRIPT.R window in the upper right, next to the "5" and then hit "Submit Answer."
+
+
 `@sct`
 ```{r}
 test_error()
@@ -114,10 +131,8 @@ With this knowledge, follow the instructions below to complete the exercise.
 `@instructions`
 - Type 5 - 2 in the editor to calculate the difference between 5 and 2.
 - Type 3 * 4 in the editor to calculate the product of 3 and 4.
-- Note you can experiment directly in the console.
-- You can also try "Run Code" before you submit your answer.
-- Click 'Submit Answer' and have a look at the R output in the console.
-- Note how the # symbol is used to add comments on the R code.
+
+Note you can experiment directly in the console. You can also try "Run Code" before you submit your answer. Click 'Submit Answer' and have a look at the R output in the console. Note how the # symbol is used to add comments on the R code.
 
 `@hint`
 All I am looking for is that you type:
@@ -186,6 +201,13 @@ sqrt(9)
 sqrt(4)
 ```
 
+`@hint`
+All I am looking for is that you type:
+sqrt(4)
+in the SCRIPT.R window in the upper right, next to the "5" and then hit "Submit Answer."
+Very soon, these hints will be less explicit!
+
+
 `@sct`
 ```{r}
 test_error()
@@ -229,6 +251,11 @@ y <- 3
 ```{r}
 x <- 4
 ```
+
+`@hint`
+If you really need a hint for this question, this course may be too tough for you!
+
+
 `@sct`
 ```{r}
 test_error()
@@ -275,15 +302,19 @@ Load the ggplot2 package with the library() command
 library(ggplot2)
 ```
 
-`@hint`
+`@solution`
+```{r}
 library(ggplot2)
+```
 
+`@hint`
+library(ggplot2) is all you need. In fact, it is already there!
+Just hit "Submit Answer"
 
 `@sct`
 ```{r}
-"ggplot2" %in% .packages()
+success_msg("Excellent!")
 ```
-
 
 
 
