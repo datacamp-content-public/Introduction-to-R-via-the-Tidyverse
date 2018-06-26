@@ -152,7 +152,48 @@ success_msg("Excellent!")
 ```
 
 
+---
+## Use a function
 
+```yaml
+type: NormalExercise
+key: 17f0b66368
+lang: r
+xp: 100
+skills: 1
+```
+
+R has thousands of built in functions for calculating quantities and performing actions. You "call" a function by typing its name. All functions are ended with parantheses. sqrt is the name of the function which calculates a square root, but to call the function we need to include parantheses at the end. Many functions take "arguments," which are provided within the parantheses.
+
+
+`@instructions`
+
+- Calculate the square root of 4.
+
+`@hint`
+sqrt(4)
+
+
+`@sample_code`
+```{r}
+# Calculate the square root of 9
+sqrt(9)
+
+# Calculate the square root of 4
+
+```
+
+`@solution`
+```{r}
+sqrt(4)
+```
+
+`@sct`
+```{r}
+test_error()
+test_student_typed("sqrt(4)", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
+success_msg("Excellent!")
+```
 
 
 
@@ -203,48 +244,7 @@ success_msg("Excellent!")
 
 
 
----
-## Use a function
 
-```yaml
-type: NormalExercise
-key: 17f0b66368
-lang: r
-xp: 100
-skills: 1
-```
-
-R has thousands of built in functions for calculating quantities and performing actions. You "call" a function by typing its name. All functions are ended with parantheses. sqrt is the name of the function which calculates a square root, but to call the function we need to include parantheses at the end. Many functions take "arguments," which are provided within the parantheses.
-
-
-`@instructions`
-
-- Calculate the square root of 4.
-
-`@hint`
-sqrt(4)
-
-
-`@sample_code`
-```{r}
-# Calculate the square root of 9
-sqrt(9)
-
-# Calculate the square root of 4
-
-```
-
-`@solution`
-```{r}
-sqrt(4)
-```
-
-`@sct`
-```{r}
-test_error()
-test_student_typed("sqrt(4)", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
-success_msg("Excellent!")
-```
 
 ---
 ## Load a package
