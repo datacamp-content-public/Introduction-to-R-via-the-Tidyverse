@@ -19,11 +19,11 @@ key: e127597aa1
 
 Type R code to solve the exercises into the editor on the right. Click on the 'Run Code' buttom to cause R to interpret and execute your code. This is a good way of trying out your answer before you formally submit it. The output of your R code is shown in the console in the lower right corner.
 
-Once you think your code is correct, hit the 'Submit Answer' button. DataCamp will tell you whether or not your code was correct. 
+Once you think your code is correct, hit the 'Submit Answer' button. DataCamp will evaluate your answer. 
 
 R makes use of the # sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. For example, Calculate 3 + 4 in the editor on the right is a comment.
 
-You can also execute R commands straight in the console, located in the lower right. This is a good way to experiment with R code.
+You can also execute R commands straight in the console, located in the lower right. This is a good way to experiment.
 
 `@instructions`
 - In the editor on the right there is already some sample code. Can you see which lines are actual R code and which are comments?
