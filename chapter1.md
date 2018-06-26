@@ -4,7 +4,9 @@
   v2: true
 
 ---
-## How DataCamp works
+
+---
+## The R Console
 
 ```yaml
 type: NormalExercise
@@ -17,9 +19,40 @@ key: e127597aa1
 
 ```
 
-The R Console at the lower right is just like the R Console you see when you start R (or RStudio) on your own computer. You can execute R commands (like 2 + 2) straight in the console. This is a good way to experiment.
+The R CONSOLE at the lower right is just like the R prompt you see when you start R (or RStudio) on your own computer. You can execute R commands (like 3 + 4) straight in the console. This is a good way to experiment. 
 
-Type R code to solve the exercises into the editor on upper right. Click on the 'Run Code' buttom to cause R to interpret and execute your code. This is a good way of trying out your answer before you formally submit it. The output of your R code is shown in the console in the lower right corner. R makes use of the # sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. For example, Calculate 3 + 4 in the editor on the right is a comment.
+
+
+`@instructions`
+- Type 3 + 4 in the console and then hit return.
+- Type 3 + 4 in the SCRIPT.R window in the upper right (next to the "1") and then hit Submit Answer
+
+
+`@solution`
+```{r}
+3 + 4
+```
+`@sct`
+```{r}
+test_error()
+test_output_contains(3 + 4)
+test_student_typed("3 + 4", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
+success_msg("Excellent! See how the console shows the result of the R code you submitted?")
+```
+
+
+---
+## How DataCamp works
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1
+key: 461f3c4158
+```
+
+Type R code to solve the exercises into the SCRIPT.R window on the upper right. Click on the 'Run Code' buttom to cause R to interpret and execute your code. This is a good way of trying out your answer before you formally submit it. The output of your R code is shown in the console in the lower right corner. R makes use of the # sign to add comments, so that you and others can understand what the R code is about. Comments are not run as R code, so they will not influence your result. For example, "# Calculate 3 + 4" in the editor on the right is a comment.
 
 Once you think your code is correct, hit the 'Submit Answer' button. DataCamp will evaluate your answer. 
 
@@ -30,7 +63,7 @@ Once you think your code is correct, hit the 'Submit Answer' button. DataCamp wi
 - Add a line of code that calculates the sum of 9 and 3, and hit the 'Submit Answer' button.
 
 `@hint`
-- Just add "9 + 3" as new line in the file, just like the example in the sample code.
+- Just add "9 + 3" as new line in the file (next to the "4"), just like in the "3 + 4" example in the sample code.
 
 
 `@sample_code`
@@ -39,6 +72,7 @@ Once you think your code is correct, hit the 'Submit Answer' button. DataCamp wi
 3 + 4
 
 # Calculate 9 + 3
+
 ```
 `@solution`
 ```{r}
@@ -102,6 +136,7 @@ All I am looking for is that you type:
 
 
 # A multiplication
+
 ```
 `@solution`
 ```{r}
@@ -138,7 +173,7 @@ key: 3761ff0384
 You can also create variables, something which can contain specific values. We use the assignment operator (<-) for this purpose.  It is a less-than sign (<) followed by a dash (-).
 
 `@instructions`
-Assign the value 4 to the variable x with the assignment operator.
+- Assign the value 4 to the variable x with the assignment operator.
 
 `@hint`
 x <- 4
@@ -149,6 +184,7 @@ x <- 4
 # The below code assigns the value 3 to the variable y
 y <- 3
 # Type below the code which assigns the value 4 to the variable x
+
 ```
 `@solution`
 ```{r}
@@ -165,6 +201,50 @@ success_msg("Excellent!")
 
 
 
+
+
+---
+## Use a function
+
+```yaml
+type: NormalExercise
+key: 17f0b66368
+lang: r
+xp: 100
+skills: 1
+```
+
+R has thousands of built in functions for calculating quantities and performing actions. You "call" a function by typing its name. All functions are ended with parantheses. sqrt is the name of the function which calculates a square root, but to call the function we need to include parantheses at the end. Many functions take "arguments," which are provided within the parantheses.
+
+
+`@instructions`
+
+- Calculate the square root of 4.
+
+`@hint`
+sqrt(4)
+
+
+`@sample_code`
+```{r}
+# Calculate the square root of 9
+sqrt(9)
+
+# Calculate the square root of 4
+
+```
+
+`@solution`
+```{r}
+sqrt(4)
+```
+
+`@sct`
+```{r}
+test_error()
+test_student_typed("sqrt(4)", not_typed_msg = "Something is wrong with your answer. Take another look at the instruction.")
+success_msg("Excellent!")
+```
 
 ---
 ## Load a package
