@@ -1,6 +1,6 @@
 ---
   title: "Getting Started"
-  description: "This chapter provides some basic information for working with R."
+  description: "This chapter provides some basic information for working with R and with DataCamp."
   v2: true
 
 ---
@@ -17,6 +17,9 @@ key: e127597aa1
 
 ```
 
+The 
+
+
 Type R code to solve the exercises into the editor on the right. Click on the 'Run Code' buttom to cause R to interpret and execute your code. This is a good way of trying out your answer before you formally submit it. The output of your R code is shown in the console in the lower right corner.
 
 Once you think your code is correct, hit the 'Submit Answer' button. DataCamp will evaluate your answer. 
@@ -30,7 +33,7 @@ You can also execute R commands straight in the console, located in the lower ri
 - Add a line of code that calculates the sum of 9 and 3, and hit the 'Submit Answer' button.
 
 `@hint`
-- Just add "9 + 3" as new line in the file, just like the example in the sample code!
+- Just add "9 + 3" as new line in the file, just like the example in the sample code.
 
 
 `@sample_code`
@@ -167,7 +170,7 @@ success_msg("Excellent!")
 
 
 ---
-## Load the tidyverse package
+## Load a package
 
 ```yaml
 type: NormalExercise
@@ -189,21 +192,21 @@ When using DataCamp, you never need to install a package. All the packages you n
 
 
 `@instructions`
-Load the tidyverse package with the library() command
+Load the ggplot2 package with the library() command
 
 `@sample_code`
 ```{r}
 # Load package below
-library(tidyverse)
+library(ggplot2)
 ```
 
 `@hint`
-library(tidyverse)
+library(ggplot2)
 
 
 `@sct`
 ```{r}
-"tidyverse" %in% .packages()
+"ggplot2" %in% .packages()
 ```
 
 
