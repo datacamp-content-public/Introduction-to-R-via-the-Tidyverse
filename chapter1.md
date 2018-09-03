@@ -19,7 +19,7 @@ The R CONSOLE at the lower right is just like the R prompt you see when you star
 
 `@instructions`
 - Type 3 + 4 in the console and then hit return.
-- Type 3 + 4 in the SCRIPT.R window in the upper right (next to the "3") and then hit Submit Answer
+- Type 3 + 4 in the SCRIPT.R window in the upper right (next to the "1") and then hit Submit Answer
 
 `@hint`
 All I am looking for is that you type:
@@ -32,7 +32,6 @@ in the SCRIPT.R window in the upper right, next to the "3".
 # This window, titled SCRIPT.R, is the place to type in your answers.
 # The hash sign (#) indicates that what follows is a comment, which R will ignore.
 ```
-
 
 `@solution`
 
@@ -94,7 +93,6 @@ in the SCRIPT.R window in the upper right, next to the "5" and then hit "Submit 
 9 + 3
 ```
 
-
 `@sct`
 
 ```{r}
@@ -130,8 +128,10 @@ With this knowledge, follow the instructions below to complete the exercise.
 `@instructions`
 - Type 5 - 2 in the editor to calculate the difference between 5 and 2.
 - Type 3 * 4 in the editor to calculate the product of 3 and 4.
-
-Note you can experiment directly in the console. You can also try "Run Code" before you submit your answer. Click 'Submit Answer' and have a look at the R output in the console. Note how the # symbol is used to add comments on the R code.
+- Note you can experiment directly in the console.
+- You can also try "Run Code" before you submit your answer.
+- Click 'Submit Answer' and have a look at the R output in the console.
+- Note how the # symbol is used to add comments on the R code.
 
 `@hint`
 All I am looking for is that you type:
@@ -210,7 +210,6 @@ sqrt(9)
 sqrt(4)
 ```
 
-
 `@sct`
 
 ```{r}
@@ -255,7 +254,6 @@ y <- 3
 x <- 4
 ```
 
-
 `@sct`
 
 ```{r}
@@ -295,9 +293,8 @@ Just hit "Submit Answer"
 
 ```{r}
 # Load package below
-library(ggplot2)
-```
 
+```
 
 `@solution`
 
@@ -305,11 +302,16 @@ library(ggplot2)
 library(ggplot2)
 ```
 
+`@hint`
+
+library(ggplot2)
+
 
 `@sct`
 
 ```{r}
-success_msg("Excellent!")
+"ggplot2" %in% .packages()
 ```
+
 
 
