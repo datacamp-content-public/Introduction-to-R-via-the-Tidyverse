@@ -306,11 +306,6 @@ Just type it in the SCRIPT.R window and hit "Submit Answer"
 library(ggplot2)
 ```
 
-`@hint`
-
-library(ggplot2)
-
-
 `@sct`
 
 ```{r}
